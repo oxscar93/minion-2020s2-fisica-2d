@@ -6,7 +6,7 @@ const GRAVITY = 1200
 
 var velocity = Vector2()
 var jumping = false
-var direction = Vector2()
+var direction = Vector2(1,0)
 	
 func get_input():
 	velocity.x = 0
@@ -33,6 +33,6 @@ func _physics_process(delta):
 			
 	velocity = move_and_slide(velocity, Vector2(0, -1))
 
-func get_x_pos():
+func get_direction():
 	return direction
 	
