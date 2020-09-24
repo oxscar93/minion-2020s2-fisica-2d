@@ -31,7 +31,7 @@ func _physics_process(delta):
 	if jumping and is_on_floor():
 		jumping = false
 			
-	velocity = move_and_slide(velocity, Vector2(0, -1))
+	velocity = move_and_slide(velocity, Vector2(0, -1), false, 4, 0.785, false)
 
 func get_direction():
 	return direction
