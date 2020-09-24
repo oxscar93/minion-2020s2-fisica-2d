@@ -33,4 +33,4 @@ position = Vector2( 240, 472 )
 position = Vector2( 216.11, 370.834 )
 
 [node name="Platform2" parent="." instance=ExtResource( 5 )]
-position = Vector2( 650.011, 285.063 )
+position = Vector2( 664, 568 )
