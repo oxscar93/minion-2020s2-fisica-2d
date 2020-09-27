@@ -3,7 +3,7 @@ extends RigidBody2D
 const LEVITATION_SPEED = -100
 const GRAVITY = 200
 const MAX_HEIGHT = 296
-const X_BOX_DIRECTION = 500
+const X_BOX_DIRECTION = 700
 const MIN_PLAYER_DISTANCE = 130
 const LEVITATION_FORCE = 20
 
@@ -12,6 +12,7 @@ var levitating = false
 var x_pos =  0
 var player
 var mouse_entered = false
+var pushing = false
 
 func _ready():
 	player = get_parent().get_node('Player') #inyectar player
@@ -25,7 +26,7 @@ func _physics_process(delta):
 	get_input()
 	
 	if (levitating):
-		_start_levitating()	
+		_start_levitation()	
 		_push_box()
 			
 func levitate():
@@ -36,13 +37,14 @@ func levitate():
 		levitating = true
 		
 func _push_box():
-	if (levitating == false):
+	if (levitating == false and pushing):
 		yield(get_tree().create_timer(0.3), "timeout")
 	
-		mode = RigidBody2D.MODE_RIGID			
+		mode = RigidBody2D.MODE_CHARACTER			
 		apply_central_impulse(Vector2(x_pos, 0))
+		pushing = false
 
-func _start_levitating():
+func _start_levitation():
 	var y = global_position.y 	
 	
 	if (y >= MAX_HEIGHT):	
@@ -50,6 +52,7 @@ func _start_levitating():
 	else:
 		mode = RigidBody2D.MODE_KINEMATIC
 		levitating = false	
+		pushing = true
 
 func _add_levitation_force(y):
 	add_force(Vector2(0, 0), Vector2(0, y))
