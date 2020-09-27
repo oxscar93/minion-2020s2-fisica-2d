@@ -20,6 +20,7 @@ func _move_chain():
 	$Chain7.play()
 	$Chain8.play()
 	$Chain9.play()
+	$Chain10.play()
 
 func _on_Platform_on_platform_movement():
 	$Platform2.move_platform($Platform.linear_velocity)

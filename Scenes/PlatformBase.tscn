@@ -23,10 +23,10 @@ animations = [ {
 script = ExtResource( 3 )
 
 [node name="Platform" parent="." instance=ExtResource( 1 )]
-position = Vector2( 228.324, 358.621 )
+position = Vector2( 220.068, 375.638 )
 
 [node name="Platform2" parent="." instance=ExtResource( 1 )]
-position = Vector2( 705.195, 522.977 )
+position = Vector2( 696.71, 522.977 )
 
 [node name="Celling" type="StaticBody2D" parent="."]
 
@@ -38,13 +38,15 @@ shape = SubResource( 1 )
 position = Vector2( 229.306, 26.4584 )
 node_a = NodePath("../Celling")
 node_b = NodePath("../Platform")
-length = 500.0
+length = 400.0
+stiffness = 64.0
 
 [node name="DampedJointPlatform2" type="DampedSpringJoint2D" parent="."]
 position = Vector2( 704.906, 31.4289 )
 node_a = NodePath("../Celling")
 node_b = NodePath("../Platform2")
 length = 550.0
+stiffness = 64.0
 
 [node name="Dot" type="Sprite" parent="."]
 position = Vector2( 701.582, 32.5846 )
@@ -52,7 +54,7 @@ scale = Vector2( 0.497647, 0.470345 )
 texture = ExtResource( 2 )
 
 [node name="Dot2" type="Sprite" parent="."]
-position = Vector2( 230.406, 32.5847 )
+position = Vector2( 229.283, 31.529 )
 scale = Vector2( 0.497647, 0.470345 )
 texture = ExtResource( 2 )
 
@@ -92,6 +94,15 @@ frames = SubResource( 2 )
 frame = 1
 speed_scale = 2.0
 
+[node name="Chain10" type="AnimatedSprite" parent="."]
+position = Vector2( 713.088, 578.323 )
+rotation = 1.5708
+scale = Vector2( 0.825178, 0.547693 )
+z_index = -8
+frames = SubResource( 2 )
+frame = 1
+speed_scale = 2.0
+
 [node name="Chain2" type="AnimatedSprite" parent="."]
 position = Vector2( 239.213, 265.37 )
 rotation = 1.5708
@@ -102,7 +113,7 @@ frame = 3
 speed_scale = 2.0
 
 [node name="Chain3" type="AnimatedSprite" parent="."]
-position = Vector2( 238.676, 453.865 )
+position = Vector2( 238.676, 424.195 )
 rotation = 1.5708
 scale = Vector2( 0.825178, 0.547693 )
 z_index = -8
