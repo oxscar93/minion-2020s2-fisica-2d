@@ -10,15 +10,21 @@ extends Node2D
 func _ready():
 	pass # Replace with function body.
 
+func _move_chain():
+	$Chain.play()
+	$Chain2.play()
+	$Chain3.play()
+	$Chain4.play()
+	$Chain5.play()
+	$Chain6.play()
+	$Chain7.play()
+	$Chain8.play()
+	$Chain9.play()
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func _on_Platform_on_platform_movement():
+	$Platform2.move_platform($Platform.linear_velocity)
+	_move_chain()
 
-
-func _on_Platform_on_platform_falling():
-	$Platform2.elevate_platform($Platform.linear_velocity)
-
-
-func _on_Platform2_on_platform_falling():
-	$Platform.elevate_platform($Platform2.linear_velocity)
+func _on_Platform2_on_platform_movement():
+	$Platform.move_platform($Platform2.linear_velocity)
+	_move_chain()

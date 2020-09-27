@@ -14,10 +14,14 @@ var player
 var mouse_entered = false
 var pushing = false
 
+export var color = Color.white
+
 func _ready():
 	player = get_parent().get_node('Player') #inyectar player
+	modulate = color
+	
 	_add_levitation_force(LEVITATION_FORCE)	
-
+	
 func get_input():
 	if (Input.is_action_pressed("click") and mouse_entered):
 		levitate()
@@ -63,5 +67,9 @@ func _on_Box_mouse_entered():
 
 func _on_Box_mouse_exited():
 	mouse_entered = false
-	modulate = Color.white
+	
+	if (color == Color.white):
+		modulate = Color.white
+	else:
+		modulate = color
 

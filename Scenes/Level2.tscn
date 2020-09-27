@@ -31,6 +31,7 @@ position = Vector2( 240, 472 )
 
 [node name="Box4" parent="." instance=ExtResource( 3 )]
 position = Vector2( 472, 472 )
+color = Color( 0.305882, 0.768627, 0.0980392, 1 )
 
 [node name="PlatformBase" parent="." instance=ExtResource( 5 )]
-position = Vector2( -56, 0 )
+position = Vector2( -48, 0 )
