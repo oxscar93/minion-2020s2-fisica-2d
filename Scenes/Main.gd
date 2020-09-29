@@ -1,5 +1,8 @@
 extends Node
 
+signal level_changed
+signal game_finished
+
 var current_level = 1
 
 # Called when the node enters the scene tree for the first time.
@@ -20,6 +23,17 @@ func _start_new_level():
 	$LevelTimer.start()
 
 func _change_level():
+	if (current_level > 4):
+		_finish_game()
+	else:	
+		_next_level()
+	
+func _finish_game():
+	emit_signal("game_finished")
+	current_level = 1
+
+func _next_level():
+	emit_signal("level_changed", current_level)
 	_start_level("Level" + str(current_level))
 	
 func _on_StartTimer_timeout():
@@ -27,3 +41,6 @@ func _on_StartTimer_timeout():
 
 func _on_LevelTimer_timeout():
 	 _change_level()
+	
+func _on_HUD_newGame():
+	$StartTimer.start() 
