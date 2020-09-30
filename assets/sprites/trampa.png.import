@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/punto_fijo2.png-e17a749db04382f99ce4fffd30bf8211.stex"
+path="res://.import/trampa.png-38fe55135ce281ad7aad90127ac8462e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://punto_fijo2.png"
-dest_files=[ "res://.import/punto_fijo2.png-e17a749db04382f99ce4fffd30bf8211.stex" ]
+source_file="res://Assets/sprites/trampa.png"
+dest_files=[ "res://.import/trampa.png-38fe55135ce281ad7aad90127ac8462e.stex" ]
 
 [params]
 

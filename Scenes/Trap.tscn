@@ -1,8 +1,10 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://trampa.png" type="Texture" id=1]
-[ext_resource path="res://punto_fijo2.png" type="Texture" id=2]
+[ext_resource path="res://Assets/sprites/trampa.png" type="Texture" id=1]
+[ext_resource path="res://Assets/sprites/punto_fijo2.png" type="Texture" id=2]
 [ext_resource path="res://Scenes/Trap.gd" type="Script" id=3]
+
+
 
 [node name="Trap" type="RigidBody2D"]
 mass = 51.0204

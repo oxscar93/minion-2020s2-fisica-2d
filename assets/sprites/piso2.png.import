@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/frame_0_delay-0.28s.png-011a2218caadba10a65efe5b7bf081b9.stex"
+path="res://.import/piso2.png-b4dd1d19d0833aad183d9a623a72f740.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://frame_0_delay-0.28s.png"
-dest_files=[ "res://.import/frame_0_delay-0.28s.png-011a2218caadba10a65efe5b7bf081b9.stex" ]
+source_file="res://Assets/sprites/piso2.png"
+dest_files=[ "res://.import/piso2.png-b4dd1d19d0833aad183d9a623a72f740.stex" ]
 
 [params]
 

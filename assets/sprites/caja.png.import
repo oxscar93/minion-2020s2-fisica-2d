@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/piso1.png-aa31910ab87831af5633d780749ef4d5.stex"
+path="res://.import/caja.png-b737c0eae9589c4e9769ed54bf05463b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://piso1.png"
-dest_files=[ "res://.import/piso1.png-aa31910ab87831af5633d780749ef4d5.stex" ]
+source_file="res://Assets/sprites/caja.png"
+dest_files=[ "res://.import/caja.png-b737c0eae9589c4e9769ed54bf05463b.stex" ]
 
 [params]
 

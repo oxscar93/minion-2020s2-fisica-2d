@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/violeta.png-aa962e0d717a76c12ef79252f52a9c54.stex"
+path="res://.import/frame_0_delay-0.28s.png-3540df4593aa709f9e5077beaa8b0c58.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://violeta.png"
-dest_files=[ "res://.import/violeta.png-aa962e0d717a76c12ef79252f52a9c54.stex" ]
+source_file="res://Assets/sprites/frame_0_delay-0.28s.png"
+dest_files=[ "res://.import/frame_0_delay-0.28s.png-3540df4593aa709f9e5077beaa8b0c58.stex" ]
 
 [params]
 
