@@ -1,1 +1,0 @@
-# minion-2020s2-fisica-2d
