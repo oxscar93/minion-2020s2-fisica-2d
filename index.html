@@ -18,8 +18,9 @@
 
 		#canvas {
 			display: block;
-			margin: 0;
+			margin: 0 auto;
 			color: white;
+			height: 100%
 		}
 
 		#canvas:focus {
@@ -164,13 +165,7 @@
 			requestAnimationFrame(animate);
 
 			function adjustCanvasDimensions() {
-				var scale = window.devicePixelRatio || 1;
-				var width = window.innerWidth;
-				var height = window.innerHeight;
-				canvas.width = width * scale;
-				canvas.height = height * scale;
-				canvas.style.width = width + "px";
-				canvas.style.height = height + "px";
+				
 			}
 			animationCallbacks.push(adjustCanvasDimensions);
 			adjustCanvasDimensions();
