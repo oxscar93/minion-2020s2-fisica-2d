@@ -30,17 +30,23 @@ func _change_level():
 	
 func _finish_game():
 	emit_signal("game_finished")
-	current_level = 1
+	_reset_levels()
 
 func _next_level():
 	emit_signal("level_changed", current_level)
 	_start_level("Level" + str(current_level))
-	
+
+func _reset_levels():
+	current_level = 1
+		
 func _on_StartTimer_timeout():
 	_change_level()
 
 func _on_LevelTimer_timeout():
 	 _change_level()
 	
-func _on_HUD_newGame():
+func _on_HUD_new_game():
 	$StartTimer.start() 
+
+func _on_HUD_restart_game():
+	_reset_levels()

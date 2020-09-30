@@ -1,10 +1,13 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Scenes/HUD.gd" type="Script" id=1]
 [ext_resource path="res://assets/fonts/Xolonium-Regular.ttf" type="DynamicFontData" id=2]
 
+[sub_resource type="DynamicFont" id=1]
+size = 47
+font_data = ExtResource( 2 )
+
 [sub_resource type="DynamicFont" id=2]
-size = 45
 font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=3]
@@ -18,10 +21,43 @@ script = ExtResource( 1 )
 anchor_right = 1.0
 margin_top = 200.0
 margin_bottom = 214.0
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = SubResource( 1 )
 text = "Minion 2"
 align = 1
 uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RestartMessage" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -75.5
+margin_right = 75.5
+margin_bottom = 20.0
+custom_fonts/font = SubResource( 2 )
+text = "Press R to restart"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LegendMessage" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -177.379
+margin_top = -130.757
+margin_right = 181.621
+margin_bottom = -18.7568
+custom_fonts/font = SubResource( 2 )
+text = "Press A to move left
+Press D to move right
+Press SPACE to jump or finish level
+Press left-click to select boxes
+"
+align = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }

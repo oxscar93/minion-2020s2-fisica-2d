@@ -8,7 +8,9 @@
 [ext_resource path="res://Scenes/Transporter.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Scenes/PlatformBase.tscn" type="PackedScene" id=8]
 
-[node name="Level4" type="Node2D"]
+[node name="Level4" type="Node2D" groups=[
+"levels",
+]]
 script = ExtResource( 1 )
 
 [node name="Player" parent="." instance=ExtResource( 6 )]

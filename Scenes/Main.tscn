@@ -19,4 +19,5 @@ one_shot = true
 [connection signal="level_changed" from="." to="HUD" method="_on_Main_level_changed"]
 [connection signal="timeout" from="LevelTimer" to="." method="_on_LevelTimer_timeout"]
 [connection signal="timeout" from="StartTimer" to="." method="_on_StartTimer_timeout"]
-[connection signal="newGame" from="HUD" to="." method="_on_HUD_newGame"]
+[connection signal="new_game" from="HUD" to="." method="_on_HUD_new_game"]
+[connection signal="restart_game" from="HUD" to="." method="_on_HUD_restart_game"]

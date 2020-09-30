@@ -10,8 +10,8 @@ var direction = Vector2(1,0)
 	
 func get_input():
 	velocity.x = 0
-	var right_pressed = Input.is_action_pressed('ui_right')
-	var left_pressed = Input.is_action_pressed('ui_left')
+	var right_pressed = Input.is_action_pressed('right')
+	var left_pressed = Input.is_action_pressed('left')
 	var jump_pressed = Input.is_action_just_pressed('ui_select')
 
 	if jump_pressed and is_on_floor():
@@ -33,6 +33,15 @@ func _physics_process(delta):
 			
 	velocity = move_and_slide(velocity, Vector2(0, -1), false, 4, 0.785, false)
 
+func _exec_jump():
+	jumping = true
+	velocity.y = JUMP_SPEED
+	
 func get_direction():
 	return direction
 	
+func celebrate():
+	_exec_jump()
+	yield(get_tree().create_timer(0.5), "timeout")
+	_exec_jump()
+	yield(get_tree().create_timer(0.5), "timeout")

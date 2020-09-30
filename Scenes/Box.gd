@@ -41,7 +41,7 @@ func levitate():
 		levitating = true
 		
 func _push_box():
-	if (levitating == false and pushing):
+	if (!levitating and pushing):
 		yield(get_tree().create_timer(0.3), "timeout")
 	
 		mode = RigidBody2D.MODE_CHARACTER			
