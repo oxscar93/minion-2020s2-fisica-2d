@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/punto_fijo2.png-49b6a4018c4ad11480e91d69eb3eb758.stex"
+path="res://.import/punto_fijo2.png-a7ca3b2028b89fa0eca59a266633ec81.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/punto_fijo2.png"
-dest_files=[ "res://.import/punto_fijo2.png-49b6a4018c4ad11480e91d69eb3eb758.stex" ]
+source_file="res://assets/sprites/punto_fijo2.png"
+dest_files=[ "res://.import/punto_fijo2.png-a7ca3b2028b89fa0eca59a266633ec81.stex" ]
 
 [params]
 

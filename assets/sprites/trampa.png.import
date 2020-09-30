@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/trampa.png-38fe55135ce281ad7aad90127ac8462e.stex"
+path="res://.import/trampa.png-77927875af6fe8978afc0543ea156064.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/trampa.png"
-dest_files=[ "res://.import/trampa.png-38fe55135ce281ad7aad90127ac8462e.stex" ]
+source_file="res://assets/sprites/trampa.png"
+dest_files=[ "res://.import/trampa.png-77927875af6fe8978afc0543ea156064.stex" ]
 
 [params]
 

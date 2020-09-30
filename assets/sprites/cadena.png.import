@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/cadena.png-0aa3b24cb935c6161e3e5cc7f3996a40.stex"
+path="res://.import/cadena.png-cec31874c6412091d1ff34d40f050cab.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/cadena.png"
-dest_files=[ "res://.import/cadena.png-0aa3b24cb935c6161e3e5cc7f3996a40.stex" ]
+source_file="res://assets/sprites/cadena.png"
+dest_files=[ "res://.import/cadena.png-cec31874c6412091d1ff34d40f050cab.stex" ]
 
 [params]
 
